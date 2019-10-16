@@ -152,6 +152,14 @@
   opacity: 1;
 }
 
+.swiper--content .items .theyalow-img {
+  opacity: 1;
+}
+
+.swiper--content .items .rdp-img {
+  opacity: 1;
+}
+
 .swiper--content .items--description {
   position: absolute;
   display: -webkit-box;
