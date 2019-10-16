@@ -1,0 +1,95 @@
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: auto;
+  padding-top: 5px;
+}
+
+.header--logo {
+  display: block;
+  width: 20%;
+  max-width: 250px;
+  min-width: 150px;
+  height: auto;
+  border-radius: 50%;
+  border: 1px solid lightgray;
+}
+
+.header--name {
+  width: 100%;
+  font-size: 2.5em;
+  font-weight: bold;
+  line-height: 1.3em;
+  border-bottom: 2px solid black;
+  margin-bottom: 3px;
+}
+
+.header--info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 46.15%;
+  max-width: 500px;
+  height: auto;
+}
+
+.header .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+  height: 60%;
+  background: #fff8;
+}
+
+.header .menu--item:not(:last-child) {
+  padding-bottom: 3px;
+}
+
+.header .menu--link {
+  text-decoration: none;
+  font-family: 'Roboto Slab', serif;
+  font-size: 2em;
+  color: #000;
+}
+
+.header .menu--separator {
+  font-size: 3em;
+  margin: 0 3px;
+}
+
+@media only screen and (max-width: 436px) {
+  .header .menu--separator {
+    display: none;
+  }
+}
+/*# sourceMappingURL=header.css.map */

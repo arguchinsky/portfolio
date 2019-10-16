@@ -4,9 +4,141 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/style.css">
+    <title>Portfolio</title>
 </head>
-<body>
-    
+<body class="page">
+    <div class="content">
+        <header class="header">
+            <img class="header--logo" src="./assets/images/photo/avatar.jpg" alt="">
+            <div class="header--info">
+                <h1 class="header--name headline">Arguchinsky Alexey</h1>
+                <ul class="menu">
+                    <li class="menu--item">
+                        <a class="menu--link" href="https://github.com/arguchinsky">GitHub</a>
+                    </li>
+                    <li class="menu--item">
+                        <a class="menu--link" href="https://www.facebook.com/profile.php?id=100001835178675">Facebook</a>
+                        <span class="menu--separator headline">|</span>
+                        <a class="menu--link" href="https://www.linkedin.com/in/arguchinsky-alexey/">LinkedIn</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <main class="main">
+            <article class="expand">
+                <section class="expand--control">
+                    <h2 class="expand--headline text">Education</h2>
+                    <div class="expand--btn">
+                        <div class="expand--arrow">&#9668;</div>
+                    </div>
+                </section>
+                <ul class="expand--content none">
+                    <li class="expand--item">
+                        <h3 class="expand--ed-institution text">School</h3>
+                        <p class="expand--years">1993 - 2004</p>
+                    </li>
+                    <li class="expand--item">
+                        <h3 class="expand--ed-institution text">VSU named after PM Masherov</h3>
+                        <p class="expand--years">2004 - 2009</p>
+                    </li>
+                    <li class="expand--item">
+                        <h3 class="expand--ed-institution text">RSSchool</h3>
+                        <p class="expand--years">2019 - 2020</p>
+                    </li>
+                </ul>
+            </article>
+            <article class="slider">
+                <button class="slider--btn-prev">&#9668;</button>
+                <div class="slider--content">
+                    <section class="example">
+                        <div class="item">
+                            <div class="project">
+                                <h2 class="project--headline headline">
+                                    Theyalow
+                                </h2>
+                                <ul class="project--moments-list">
+                                    <li class="project--moment text">Adaptive layout</li>
+                                    <li class="project--moment text">Pixel perfect</li>
+                                </ul>
+                                <div class="tip text">
+                                    <p class="tip--text">Tap on image to see the project</p>
+                                    <p class="tip--arrow">&gt;</p>
+                                </div>
+                            </div>
+                            <a class="screenshot" href="#">
+                                <img class="screenshot--img" src="./assets/images/screenshots/theyalow-screenshot.jpg" alt="project-screenshot">
+                            </a>
+                        </div>
+                        <div class="item">
+                            <div class="project">
+                                    <h2 class="project--headline headline">
+                                        Design Repair Project
+                                    </h2>
+                                    <ul class="project--moments-list">
+                                        <li class="project--moment text">Responsive layout</li>
+                                        <li class="project--moment text">SVG</li>
+                                    </ul>
+                                    <div class="tip text">
+                                        <p class="tip--text">Tap on image to see the project</p>
+                                        <p class="tip--arrow">&gt;</p>
+                                    </div>
+                                </div>
+                                <a class="screenshot" href="#">
+                                    <img class="screenshot--img" src="./assets/images/screenshots/theyalow-screenshot.jpg" alt="project-screenshot">
+                                </a>
+                        </div>
+                    </section>
+                </div>
+                <button class="slider--btn-next">&#9658;</button>
+            </article>
+            <article class="swiper">
+                <div class="swiper--btn-block">
+                    <h3 class="headline">show desc</h3>
+                    <button class="swiper--btn">show</button>
+                </div>
+                <section class="swiper--content">
+                    <div class="items">
+                        <div class="items--item theyalow">
+                            <a class="items--link theyalow-link" href="#">
+                                <img class="items--link-img" src="./assets/images/screenshots/theyalow-screenshot.jpg" alt="">
+                            </a>
+                            <div class="items--description theyalow-desc">
+                                <h2 class="items--headline headline">
+                                    Theyalow
+                                </h2>
+                                <ul class="items--moments">
+                                    <li class="items--moment text">Adaptive layout</li>
+                                    <li class="items--moment text">Pixel perfect</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="items--item rdp">
+                            <a class="items--link rdp-link" href="#">
+                                <img class="items--link-img" src="./assets/images/screenshots/rdp.jpg" alt="">
+                            </a>
+                            <div class="items--description rdp-desc">
+                                <h2 class="items--headline headline">
+                                    RepairDesignProject
+                                </h2>
+                                <ul class="items--moments">
+                                    <li class="items--moment text">Responsive layout</li>
+                                    <li class="items--moment text">SVG</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div class="swiper--tip">
+                    <p class="tip-text text">
+                        swipe to see other
+                    </p>
+                </div>
+            </article>
+        </main>
+    </div>
+    <script src="./src/control.js"></script>
 </body>
 </html>

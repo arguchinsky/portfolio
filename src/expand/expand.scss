@@ -1,0 +1,57 @@
+@import '../variables';
+
+.expand{
+    @include flex-column();
+    width: 70%;
+    height: auto;
+    @media only screen and (max-width: 375px){
+        width: 100%;
+    }
+
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    background: rgba(0, 0, 255, 0.3);
+    background: gray;
+    overflow: hidden;
+    &--control{
+        @include flex($between);
+        width: 100%;
+        height: 40px;
+        background: rgba(0, 0, 0, 0.3);
+    }
+
+    &--headline{
+        width: 30%;
+        font-size: 1.9em;
+    }
+    &--btn{
+        @include flex(center);
+        width: 29px;
+        height: 29px;
+        margin-right: 5px;
+        background: rgba(255, 0, 0, 0.3);
+        box-shadow: 3px 3px 0px 0px rgba(0,0,0,0.75), inset 3px 3px 0px 0px rgba(0,0,0,0.75);
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    &--arrow{
+        padding-top: 4px;
+        padding-left: 2px;
+        
+    }
+    &--content{
+        @include flex-column($between, $f-start);
+        width: 100%;
+        height: 250px;
+        margin-top: 10px;
+        border-top: 1.5px solid black;
+    }
+
+    &--ed-institution{
+        font-size: 1.7em;
+    }
+    &--years{
+        font-size: 1.5em;
+    }
+}

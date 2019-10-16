@@ -1,0 +1,19 @@
+@import '../variables';
+@import url('../example/example.css');
+
+.slider{
+    @include flex($around);
+    width: 70%;
+    height: 400px;
+    background: green;
+    @media only screen and(max-width: 375px){
+        display: none;
+    }
+
+    &--content{
+        overflow: hidden;
+        width: 90%;
+        height: 100%;
+        background: gray;
+    }
+}

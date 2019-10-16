@@ -1,0 +1,10 @@
+@import '../variables';
+@import url('../slider/slider.css');
+@import url('../swiper/swiper.css');
+
+.main{
+    @include flex-column(center);
+    width: 100%;
+    height: auto;
+    margin-top: 5px;
+}

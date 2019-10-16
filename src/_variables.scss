@@ -1,0 +1,18 @@
+$f-start: flex-start;
+$f-end: flex-end;
+$between: space-between;
+$around: space-around;
+
+@mixin flex-column($justify: $f-start, $align: center, $direction: column){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin flex($justify: $between, $align: center, $direction: row){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}

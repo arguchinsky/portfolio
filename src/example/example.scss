@@ -1,0 +1,70 @@
+@import '../variables';
+
+.example{
+    @include flex($between);
+    
+    width: calc(100% * 2);
+    height: 100%;
+    background: white;
+    .item{
+        @include flex();
+
+        width: 50%;
+        height: 100%;
+        
+        .project{
+            @include flex-column($around, $f-start);
+            width: 50%;
+            height: 100%;
+            background: yellow;
+
+            &--headline{
+                font-size: 1.5em;
+                font-weight: bold;
+            }
+
+            &--moments-list{
+                @include flex-column($around, $f-start);
+                width: 100%;
+                height: auto;
+            }
+
+            &--moment{
+                list-style: disc inside;
+                font-size: 1.3em;
+                &:not(:last-child){
+                    padding-bottom: 8px;
+                }
+            }
+
+            .tip{
+                @include flex($between);
+                width: 80%;
+                background: #0003;
+                align-self: center;
+
+                &--text{
+                    width: 50%;
+                    font-size: 1.3em;
+                }
+                &--arrow{
+                    font-size: 2em;
+                }
+                
+            }
+
+        }
+        .screenshot{
+            @include flex(center);
+            width: 50%;
+            height: 100%;
+            background: red;
+            &--img{
+                width: 100%;
+                max-width: 282px;
+                height: auto;
+            }
+        }
+    }
+}
+
