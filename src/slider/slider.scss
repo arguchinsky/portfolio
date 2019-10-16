@@ -3,17 +3,41 @@
 
 .slider{
     @include flex($around);
-    width: 70%;
+    width: 98%;
     height: 400px;
-    background: green;
+    margin: 10px 0;
+    border: 1px solid #0008;
+    border-radius: 20px;
     @media only screen and(max-width: 375px){
         display: none;
     }
 
     &--content{
         overflow: hidden;
-        width: 90%;
+        width: 80%;
         height: 100%;
-        background: gray;
+    }
+
+    &--btn{
+        width: 40px;
+        height: 40px;
+        font-family: "Permanent Marker", cursive;
+        text-align: center;
+        font-size: 1.8em;
+        font-weight: 700;
+        border: 1px solid transparent;
+        border-radius: 50%;
+        background: rgba(20, 186, 236, $alpha: .8);
+        
+
+        &:hover{
+            cursor: pointer;
+            background: transparent;
+            border: 1px solid rgba(20, 186, 236, $alpha: .8);
+        }
+        &:active{
+            color: rgba(20, 186, 236, $alpha: .8);
+            transform: translateY(1px);
+        }
     }
 }

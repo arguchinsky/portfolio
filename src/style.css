@@ -40,9 +40,8 @@
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  max-width: 1300px;
+  max-width: 920px;
   height: auto;
-  background: #0008;
 }
 
 .page .none {

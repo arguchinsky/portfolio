@@ -1,5 +1,4 @@
 .swiper {
-  width: 35%;
   height: 500px;
   display: none;
 }
@@ -20,6 +19,7 @@
         -ms-flex-align: center;
             align-items: center;
     width: 100%;
+    background: #ccc8;
   }
 }
 
@@ -39,7 +39,6 @@
           align-items: center;
   width: 100%;
   height: 10%;
-  background: lightgreen;
 }
 
 .swiper--btn-block .headline {
@@ -76,7 +75,6 @@
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  background: red;
 }
 
 .swiper--content .items {
@@ -219,7 +217,6 @@
           align-items: center;
   width: 100%;
   height: 10%;
-  background: lightgreen;
 }
 
 .swiper--tip .tip-text {

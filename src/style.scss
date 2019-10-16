@@ -16,9 +16,8 @@
     .content{
         @include flex-column();
         width: 100%;
-        max-width: 1300px;
+        max-width: 920px;
         height: auto;
-        background: #0008;
     }
 
     .none{

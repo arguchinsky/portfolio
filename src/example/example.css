@@ -14,7 +14,6 @@
           align-items: center;
   width: calc(100% * 2);
   height: 100%;
-  background: white;
 }
 
 .example .item {
@@ -50,11 +49,10 @@
           align-items: flex-start;
   width: 50%;
   height: 100%;
-  background: yellow;
 }
 
 .example .item .project--headline {
-  font-size: 1.5em;
+  font-size: 3em;
   font-weight: bold;
 }
 
@@ -77,7 +75,7 @@
 
 .example .item .project--moment {
   list-style: disc inside;
-  font-size: 1.3em;
+  font-size: 2em;
 }
 
 .example .item .project--moment:not(:last-child) {
@@ -99,7 +97,6 @@
       -ms-flex-align: center;
           align-items: center;
   width: 80%;
-  background: #0003;
   -ms-flex-item-align: center;
       align-self: center;
 }
@@ -111,6 +108,7 @@
 
 .example .item .project .tip--arrow {
   font-size: 2em;
+  font-weight: 700;
 }
 
 .example .item .screenshot {
@@ -129,7 +127,6 @@
           align-items: center;
   width: 50%;
   height: 100%;
-  background: red;
 }
 
 .example .item .screenshot--img {
