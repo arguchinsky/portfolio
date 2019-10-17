@@ -29,10 +29,6 @@ const stop = parent - exampleWidth;
 
 let position = 0;
 
-console.log(parent);
-console.log(exampleWidth);
-console.log(stop);
-
 const slideNext = () => {
     if(position > stop) position -= parent;
     else position = 0;

@@ -50,9 +50,11 @@
                 transition: opacity .5s ease-in;
                 &.theyalow{
                     opacity: 1;
+                    z-index: 100;
                 }
                 &.rdp{
                     opacity: 0;
+                    z-index: 0;
                 }
             }
             &--link{

@@ -120,10 +120,12 @@
 
 .swiper--content .items--item.theyalow {
   opacity: 1;
+  z-index: 100;
 }
 
 .swiper--content .items--item.rdp {
   opacity: 0;
+  z-index: 0;
 }
 
 .swiper--content .items--link {
