@@ -54,11 +54,11 @@ const items = document.querySelector('.items');
 const showBtn = document.querySelector('.swiper--btn');
 
 const theyalow = document.querySelector('.theyalow');
-const theyalowLink = document.querySelector('.theyalow-link');
+const theyalowImg = document.querySelector('.theyalow-img');
 const theyalowDesc = document.querySelector('.theyalow-desc');
 
 const rdp = document.querySelector('.rdp');
-const rdpLink = document.querySelector('.rdp-link');
+const rdpImg = document.querySelector('.rdp-img');
 const rdpDesc = document.querySelector('.rdp-desc');
 
 let theyalowOp = parseInt(getComputedStyle(theyalow).opacity);
@@ -73,8 +73,17 @@ const slide = (flag) => {
         rdpOp = rdpOp ? 0 : 1;
     }
 
+
     theyalow.style.opacity = theyalowOp;
     rdp.style.opacity = rdpOp;
+
+    if (theyalowOp){
+        theyalow.style.zIndex = 100;
+        rdp.style.zIndex = 0;
+    }else if(rdpOp){
+        theyalow.style.zIndex = 0;
+        rdp.style.zIndex = 100;
+    }
 }
 
 const handleSwipeStart = (e) => {
@@ -90,10 +99,10 @@ const checkOpacity = (el) => parseInt(getComputedStyle(el).opacity);
 
 const handleClick = () =>{
     if (theyalowOp){
-        theyalowLink.style.opacity = checkOpacity(theyalowLink) ? 0 : 1;
+        theyalowImg.style.opacity = checkOpacity(theyalowImg) ? 0 : 1;
         theyalowDesc.style.opacity = checkOpacity(theyalowDesc) ? 0 : 1;
     }else if (rdpOp){
-        rdpLink.style.opacity = checkOpacity(rdpLink) ? 0 : 1;
+        rdpImg.style.opacity = checkOpacity(rdpImg) ? 0 : 1;
         rdpDesc.style.opacity = checkOpacity(rdpDesc) ? 0 : 1;
     }
 }
