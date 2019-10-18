@@ -13,6 +13,7 @@
       -ms-flex-align: center;
           align-items: center;
   overflow: scroll;
+  overflow-x: hidden;
 }
 
 .frame {
