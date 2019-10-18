@@ -1,0 +1,51 @@
+.page{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    overflow: scroll;
+}
+
+.frame{
+    position: relative;
+    height: 0;
+    width: 100%;
+    padding-bottom: 100%;
+    &--content{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+
+.control{
+    position: fixed;
+    top: 70%;
+    right: 5px;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    
+    width: 100px;
+    height: 150px;
+    &--btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 99%;
+        height: 50px;
+
+        border: 1px solid transparent;
+        border-radius: 10px;
+        background: rgba(20, 186, 236, $alpha: .8);
+        &:hover{
+            border: 1px solid rgba(20, 186, 236, $alpha: .8);
+            background: transparent;
+        }
+        &-text{
+            font-weight: 700;
+        }
+    }
+}
