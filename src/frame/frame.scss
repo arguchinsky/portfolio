@@ -5,18 +5,26 @@
     align-items: center;
     overflow: scroll;
     overflow-x: hidden;
+
+    background: #0008;
 }
 
 .frame{
     position: relative;
     height: 0;
     width: 100%;
-    padding-bottom: 100%;
+    padding-bottom: 81%;
     background: #fff;
     &--content{
         position: absolute;
         top: 0;
         left: 0;
+        &.theyalow{
+            height: 1849px;
+        }
+        &.rdp{
+            height: 10154.6px;
+        }
     }
 }
 
@@ -42,10 +50,12 @@
         border: 2px solid transparent;
         border-radius: 10px;
         background: rgba(20, 186, 236, $alpha: .8);
+        color: #000;
         &:hover{
             cursor: pointer;
             border: 2px solid rgba(20, 186, 236, $alpha: .8);
             background: transparent;
+            color: rgba(20, 186, 236, $alpha: .8);
         }
         &-text{
             font-weight: 700;
@@ -53,6 +63,15 @@
     }
 }
 
-.background{
-    background: #0008;
+.back-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: black;
+    &:hover{
+        color: rgba(20, 186, 236, $alpha: .8);
+    }
 }

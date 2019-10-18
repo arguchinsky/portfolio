@@ -6,19 +6,22 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
         <link rel="stylesheet" href="./src/frame/frame.css">
-        <title>Document</title>
+        <title>RepairDesignProject example</title>
     </head>
     <body class="page">
         <div class="frame">
-            <iframe class="frame--content" src="./projects/rdp/index.html" width="100%" height="10154.8px" frameborder="0" scrolling="no"></iframe>
+            <iframe class="frame--content rdp" src="./projects/rdp/index.html" width="100%" height="10154.8px" frameborder="0" scrolling="no"></iframe>
         </div>
         <div class="control">
             <div class="control--btn switch">
                 <span class="control--btn-text switch-text">MOBILE</span>
             </div>
             <div class="control--btn back">
-                <span class="control--btn-text">BACK</span>
+                <a class="back-link" href="./index.html" title="Back to portfolio">
+                    <span class="control--btn-text">BACK</span>
+                </a>
             </div>
         </div>
+        <script src="./src/frame-control.js"></script>
     </body>
 </html>
