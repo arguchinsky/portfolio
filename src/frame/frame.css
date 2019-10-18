@@ -20,6 +20,7 @@
   height: 0;
   width: 100%;
   padding-bottom: 100%;
+  background: #fff;
 }
 
 .frame--content {
@@ -60,17 +61,22 @@
           align-items: center;
   width: 99%;
   height: 50px;
-  border: 1px solid transparent;
+  border: 2px solid transparent;
   border-radius: 10px;
   background: rgba(20, 186, 236, 0.8);
 }
 
 .control--btn:hover {
-  border: 1px solid rgba(20, 186, 236, 0.8);
+  cursor: pointer;
+  border: 2px solid rgba(20, 186, 236, 0.8);
   background: transparent;
 }
 
 .control--btn-text {
   font-weight: 700;
+}
+
+.background {
+  background: #0008;
 }
 /*# sourceMappingURL=frame.css.map */
