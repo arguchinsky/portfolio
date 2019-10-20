@@ -28,10 +28,13 @@
         margin-right: 5px;
         background: rgba(20, 186, 236, $alpha: .8);
         box-shadow: 3px 3px 0px 0px rgba(0,0,0,0.75), inset 3px 3px 0px 0px rgba(0,0,0,0.75);
-
+        color: #000;
         font-size: 1.8em;
         &:hover{
             cursor: pointer;
+            background: transparent;
+            color: rgba(20, 186, 236, $alpha: .8);
+            box-shadow: 3px 3px 0px 0px rgba(20, 186, 236, $alpha: .8), inset 3px 3px 0px 0px rgba(20, 186, 236, $alpha: .8);
         }
     }
     &--arrow{

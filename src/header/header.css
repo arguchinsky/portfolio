@@ -82,6 +82,10 @@
   color: #000;
 }
 
+.header .menu--link:hover {
+  color: rgba(20, 186, 236, 0.8);
+}
+
 .header .menu--separator {
   font-size: 3em;
   margin: 0 3px;

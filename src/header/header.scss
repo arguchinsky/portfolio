@@ -52,6 +52,9 @@
             font-family: 'Roboto Slab', serif;
             font-size: 2em;
             color: #000;
+            &:hover{
+                color: rgba(20, 186, 236, $alpha: .8);
+            }
         }
         &--separator{
             font-size: 3em;

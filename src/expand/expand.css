@@ -68,11 +68,16 @@
   background: rgba(20, 186, 236, 0.8);
   -webkit-box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.75), inset 3px 3px 0px 0px rgba(0, 0, 0, 0.75);
           box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.75), inset 3px 3px 0px 0px rgba(0, 0, 0, 0.75);
+  color: #000;
   font-size: 1.8em;
 }
 
 .expand--btn:hover {
   cursor: pointer;
+  background: transparent;
+  color: rgba(20, 186, 236, 0.8);
+  -webkit-box-shadow: 3px 3px 0px 0px rgba(20, 186, 236, 0.8), inset 3px 3px 0px 0px rgba(20, 186, 236, 0.8);
+          box-shadow: 3px 3px 0px 0px rgba(20, 186, 236, 0.8), inset 3px 3px 0px 0px rgba(20, 186, 236, 0.8);
 }
 
 .expand--arrow {
